@@ -1,25 +1,3 @@
-#mentorapp.py
-
-# from flask import Flask, render_template, request
-
-# app = Flask(__name__)
-# # app = Flask("Mentor App")
-
-# @app.route('/')
-# def landing_page():
-#     return render_template('index.html')
-
-# @app.route('/submit', methods=['POST'])
-# def submit_email():
-#     email = request.form.get('email')
-#     # Save the email to your database or perform any desired action
-#     return 'Email submitted successfully!'
-
-# if __name__ == '__main__':
-#     # app.debug = True
-#     app.run(port = 5988)
-###Test 1^
-
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -34,4 +12,4 @@ def landing_page():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(port=5988)
+    app.run(host='0.0.0.0', port=5988)
